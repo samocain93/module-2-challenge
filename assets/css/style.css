@@ -1,14 +1,33 @@
 * {
-    color: white;
+    color: black;
 }
 
 body {
-    background-color: #3b5998;
+    background-color: #fff;
     color: white;
 }
 .header-last-name {
-    color: white;
+    color: black;
+}
+h1 {
+    padding: 20px;
 }
 a {
     text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    margin: auto;
+    padding: 20px;
 }
