@@ -1,4 +1,6 @@
-.intro img {
-    height: 150px;
-    width:150px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
