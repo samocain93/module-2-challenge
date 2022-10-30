@@ -56,6 +56,31 @@ section {
     padding: 5em 2em;
 }
 
+:focus {
+    outline: 3px solid var(--fw-bold);
+    outline-offset: 3px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /* Typography */
 
 h1,
@@ -109,6 +134,9 @@ h3 {
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 50%; 
+    border: dotted var(--clr-accent) 1px;
+    box-shadow: var(--bs);
 }
 
 
@@ -121,12 +149,12 @@ h3 {
         grid-template-areas:
         "img title"
         "img subtitle";
-        grid-template-columns: min-content max-content ;
+        grid-template-columns: min-content max-content;
     }
 
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 300px;
         position: relative;
         z-index: 2;
     }
@@ -144,3 +172,42 @@ h3 {
 
 
 /* Services Section */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(../images/texture.jpeg);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: "";
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-accent);
+    opacity: 0.5;
+ }
+  .service {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service + .service {
+        margin-left: 2m;
+    }
+}
