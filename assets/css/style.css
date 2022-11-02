@@ -165,7 +165,7 @@ header {
 .nav__link {
     color: var(--clr-accent);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -278,21 +278,33 @@ header {
   .service {
     max-width: 500px;
     margin: 0 auto;
+    padding: 2.5rem;
   }
 
   .service__heading {
     font-size: 2rem;
   }
 
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 80%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
     .service + .service {
         margin-left: 2m;
+    }
+}
+
+@media (min-width: 300px) {
+    .my-services {
+        width: 100%;
     }
 }
 
