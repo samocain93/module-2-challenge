@@ -339,18 +339,49 @@ header {
 
 .footer {
     background: #111;
+    width: auto;
     color: var(--clr-accent);
     text-align: center;
     padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .footer-link {
-    text-decoration: underline;
-    color: var(--clr-accent);
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+    
+}
+
+.footer__button {
+    border: 0;
+    line-height: 2em;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+    padding: 0 20px;
+
+}
+
+.footer__button:hover {
+    background: var(--clr-light);
+    transform: scale(1.1);
 }
 
 .footer-link:hover {
     transition: 200ms;
-    color: white;
+    color: var(--clr-dark);
+
 }
 
+.footer__title {
+    color: var(--clr-light);
+    margin-right: 20px;
+    font-family: var(--ff-secondary);
+}
