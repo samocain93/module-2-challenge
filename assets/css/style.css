@@ -133,12 +133,24 @@ header {
     background: var(--clr-dark);
     position: fixed;
     overflow: hidden;
+    top: 0;
+    z-index: 100;
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .nav__list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .nav-item {
@@ -164,6 +176,7 @@ header {
         display: flex;
         text-align: center;
         width: 100%;
+        align-content: center;
     }
 }
 
@@ -174,6 +187,8 @@ header {
         display: flex;
         text-align: center;
         width: 100%;
+        font-size: 1rem;
+        align-content: center;
     }
 }
 
@@ -182,6 +197,7 @@ header {
 
 .intro {
     position: relative;
+    /* margin-top: 20px; */
 }
 
 .intro__img {
@@ -189,6 +205,11 @@ header {
     border-radius: 50%; 
     /* border: dotted var(--clr-accent) 1px; */
     box-shadow: var(--bs);
+    margin-top: 20px;
+}
+
+.section__title--intro {
+    margin-top: 1rem;
 }
 
 
@@ -202,6 +223,13 @@ header {
         "img title"
         "img subtitle";
         grid-template-columns: min-content max-content;
+    }
+
+    @media (max-width: 600px) {
+        .intro {
+            display: flex;
+            align-content: center;
+        }
     }
 
     .intro__img {
