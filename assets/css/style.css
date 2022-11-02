@@ -124,6 +124,53 @@ h3 {
 
 /* Header */
 
+header {
+    background: var(--clr-dark);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--clr-accent);
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav__link {
+    color: var(--clr-accent);
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+
+@media (max-width: 800px) {
+    header,
+    .nav__list,
+    .nav__link {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header,
+    .nav__list,
+    .nav__link {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+}
 
 
 /* Intro Section */
@@ -291,5 +338,19 @@ h3 {
 /* Footer Section */
 
 .footer {
-    
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2em 0;
 }
+
+.footer-link {
+    text-decoration: underline;
+    color: var(--clr-accent);
+}
+
+.footer-link:hover {
+    transition: 200ms;
+    color: white;
+}
+
