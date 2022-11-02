@@ -16,7 +16,9 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
-    --clr-accent-2: #a31d14;
+    --clr-accent-2: #CFD59D;
+    --clr-accent-3: #B04141;
+    --clr-accent-4: #68D5E5;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -67,7 +69,7 @@ section {
 .btn {
     display: inline-block;
     padding: .5em 1.5em;
-    background: var(--clr-accent);
+    background: var(--clr-accent-2);
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
@@ -120,7 +122,7 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background-color: var(--clr-accent);
+    background-color: var(--clr-accent-2);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     padding: 1em;
@@ -156,14 +158,14 @@ header {
 .nav-item {
     text-decoration: none;
     list-style-type: none;
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     display: inline;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .nav__link {
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     text-decoration: none;
     font-size: 1.5rem;
 
@@ -262,7 +264,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     position: relative;
 }
 
@@ -272,7 +274,7 @@ header {
     width: 3em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-accent);
+    background: var(--clr-accent-2);
     opacity: 0.5;
  }
   .service {
@@ -356,11 +358,12 @@ header {
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
     font-size: var(--fs-h3);
 }
+
 
 .portfolio {
     display: grid;
