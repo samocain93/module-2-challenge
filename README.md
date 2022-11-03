@@ -8,7 +8,7 @@ make it responsive and accessible, as well as display and link to examples of pr
 - This was both an exciting and challenging project as it brought together our knowledge to create and style a website from scratch, stylize it using CSS, and make it responsive and functional all while holding space to demonstrate our work projects to potential employers. 
 
 - This was a great learning experience and an opportunity to be able to seek out tools and resources for things I might not be well-versed on in order to make 
-a better functioning website.
+a better functioning website and be a great example of a home portfolio page that I can update and utilize in the future. 
 
 ## Usage
 
