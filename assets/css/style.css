@@ -1,3 +1,5 @@
+/* Global Border Box Setup */
+
 *,
 *::before,
 *::after {
@@ -322,7 +324,7 @@ header {
     }
 }
 
-/* About */
+/* About Section */
 
 
 .about-me {
@@ -418,6 +420,7 @@ header {
     align-items: center;
     justify-content: center;
     background: #436343;
+
 
 }
 
