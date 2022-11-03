@@ -203,6 +203,9 @@ header {
 .intro {
     position: relative;
     /* margin-top: 20px; */
+    background: url(../images/austin-skyline.jpeg);
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
 }
 
 .intro__img {
@@ -216,6 +219,7 @@ header {
 .section__title--intro {
     margin-top: 1rem;
     margin-bottom: auto;
+    margin-top: 50px;
 }
 
 
@@ -223,12 +227,16 @@ header {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
+        /* width: min-content; */
         grid-column-gap: 1em;
         grid-template-areas:
         "img title"
         "img subtitle";
         grid-template-columns: min-content max-content;
+        background-size: cover;
+        width: auto;
+        background-repeat: no-repeat;
+        /* background-position: center; */
     }
 
     @media (max-width: 600px) {
@@ -409,6 +417,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background: #436343;
 
 }
 
